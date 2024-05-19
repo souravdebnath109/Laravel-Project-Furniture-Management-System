@@ -3,7 +3,12 @@
         {{-- <img class="logo-abbr" src="{{config('app.url')}}/Admin/images/logo.png" alt="">
         <img class="logo-compact" src="{{config('app.url')}}/Admin/images/logo-text.png" alt="">
         <img class="brand-title" src="{{config('app.url')}}/Admin/images/logo-text.png" alt=""> --}}
-        <p>User's Home</p>
+       @if(Auth::user() && Auth::user()->role==1)
+       <p>Admin's Dashboard</p>
+        @endif
+        @if(Auth::user() && Auth::user()->role==2)
+        <p>User's Dashboard</p>
+         @endif
     </a>
 
     <div class="nav-control">
