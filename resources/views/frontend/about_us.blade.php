@@ -8,7 +8,7 @@
                     <h1>About Us</h1>
                     <p class="mb-4">Experience seamless shopping: 24/7 support, hassle-free returns, easy browsing, and
                         fast, free shipping. Your satisfaction is our priority.</p>
-                    <p><a href="{{url('/shop')}}" class="btn btn-secondary me-2">Shop Now</a><a href="#"
+                    <p><a href="{{url('/shop')}}" class="btn btn-secondary me-2">Shop Now</a><a href="{{url('/about_us')}}"
                             class="btn btn-white-outline">Explore</a></p>
                 </div>
             </div>
@@ -30,8 +30,7 @@
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6">
                 <h2 class="section-title">Why Choose Us</h2>
-                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit
-                    imperdiet dolor tempor tristique.</p>
+                <p>Choose us for unparalleled quality, exceptional service, hassle-free returns, swift shipping, and round-the-clock support. Elevate your shopping experience with us today!.</p>
 
                 <div class="row my-5">
                     <div class="col-6 col-md-6">
@@ -41,7 +40,7 @@
                                     class="imf-fluid">
                             </div>
                             <h3>Fast &amp; Free Shipping</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.
+                            <p>Experience swift, complimentary shipping: Enjoy the convenience of fast delivery and free shopping on all orders. Elevate your shopping journey now!.
                             </p>
                         </div>
                     </div>
@@ -52,7 +51,7 @@
                                 <img src="{{config('app.url')}}/Frontend/images/bag.svg" alt="Image" class="imf-fluid">
                             </div>
                             <h3>Easy to Shop</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.
+                            <p>Simplify your shopping: Navigate effortlessly through our user-friendly website and find your perfect piece with ease. Enjoy seamless shopping!.
                             </p>
                         </div>
                     </div>
@@ -64,7 +63,7 @@
                                     class="imf-fluid">
                             </div>
                             <h3>24/7 Support</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.
+                            <p>Accessible assistance anytime: Our dedicated support team is available around the clock to address any queries or concerns promptly.
                             </p>
                         </div>
                     </div>
@@ -76,7 +75,7 @@
                                     class="imf-fluid">
                             </div>
                             <h3>Hassle Free Returns</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.
+                            <p>Simplify returns: Our hassle-free process ensures easy returns, prioritizing your satisfaction and making shopping with us worry-free.
                             </p>
                         </div>
                     </div>
@@ -106,70 +105,7 @@
             </div>
         </div>
 
-        {{-- <div class="row">
-
-
-            <!-- Start Column 1 -->
-            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                <img src="{{config('app.url')}}/Frontend/images/person_1.jpg" class="img-fluid mb-5">
-                <h3 clas><a href="#"><span class="">Lawson</span> Arnold</a></h3>
-                <span class="d-block position mb-4">CEO, Founder, Atty.</span>
-                <p>Separated they live in.
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                </p>
-                <p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a>
-                </p>
-            </div>
-            <!-- End Column 1 -->
-
-            <!-- Start Column 2 -->
-            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                <img src="{{config('app.url')}}/Frontend/images/person_2.jpg" class="img-fluid mb-5">
-
-                <h3 clas><a href="#"><span class="">Jeremy</span> Walker</a></h3>
-                <span class="d-block position mb-4">CEO, Founder, Atty.</span>
-                <p>Separated they live in.
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                </p>
-                <p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a>
-                </p>
-
-            </div>
-            <!-- End Column 2 -->
-
-            <!-- Start Column 3 -->
-            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                <img src="{{config('app.url')}}/Frontend/images/person_3.jpg" class="img-fluid mb-5">
-                <h3 clas><a href="#"><span class="">Patrik</span> White</a></h3>
-                <span class="d-block position mb-4">CEO, Founder, Atty.</span>
-                <p>Separated they live in.
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                </p>
-                <p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a>
-                </p>
-            </div>
-            <!-- End Column 3 -->
-
-            <!-- Start Column 4 -->
-            <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                <img src="{{config('app.url')}}/Frontend/images/person_4.jpg" class="img-fluid mb-5">
-
-                <h3 clas><a href="#"><span class="">Kathryn</span> Ryan</a></h3>
-                <span class="d-block position mb-4">CEO, Founder, Atty.</span>
-                <p>Separated they live in.
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                </p>
-                <p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a>
-                </p>
-
-
-            </div>
-            <!-- End Column 4 -->
-
-
-
-        </div> --}}
-
+       
 
 
     {{-- for first dynamic --}}
@@ -234,20 +170,20 @@
 
                                     <div class="testimonial-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
-                                                quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate
-                                                velit imperdiet dolor tempor tristique. Pellentesque habitant morbi
-                                                tristique senectus et netus et malesuada fames ac turpis egestas.
-                                                Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                            <p>&ldquo;“I designed it for make and delivery furniture at doorstep of people. and make easier access of furniture buy and sell and purchase in 1 step.ITs my hope that it will help people .”
+
+                        
+                                                
+                                                &rdquo;</p>
                                         </blockquote>
 
                                         <div class="author-info">
                                             <div class="author-pic">
-                                                <img src="{{config('app.url')}}/Frontend/images/person-1.png"
+                                                <img src="{{config('app.url')}}/Frontend/images/sourav.jpg"
                                                     alt="Maria Jones" class="img-fluid">
                                             </div>
-                                            <h3 class="font-weight-bold">Maria Jones</h3>
-                                            <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                            <h3 class="font-weight-bold">Sourav Debnath</h3>
+                                            <span class="position d-block mb-3">CEO, Co-Founder, Furnixure Inc.</span>
                                         </div>
                                     </div>
 
@@ -262,20 +198,20 @@
 
                                     <div class="testimonial-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
-                                                quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate
-                                                velit imperdiet dolor tempor tristique. Pellentesque habitant morbi
-                                                tristique senectus et netus et malesuada fames ac turpis egestas.
-                                                Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                            <p>&ldquo;“I designed it for make and delivery furniture at doorstep of people. and make easier access of furniture buy and sell and purchase in 1 step.ITs my hope that it will help people .”
+
+                                               
+                                                
+                                                &rdquo;</p>
                                         </blockquote>
 
                                         <div class="author-info">
                                             <div class="author-pic">
-                                                <img src="{{config('app.url')}}/Frontend/images/person-1.png"
+                                                <img src="{{config('app.url')}}/Frontend/images/sourav.jpg"
                                                     alt="Maria Jones" class="img-fluid">
                                             </div>
-                                            <h3 class="font-weight-bold">Maria Jones</h3>
-                                            <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                            <h3 class="font-weight-bold">Sourav Debnath</h3>
+                                            <span class="position d-block mb-3">CEO, Co-Founder, Furnixure Inc.</span>
                                         </div>
                                     </div>
 
@@ -290,20 +226,20 @@
 
                                     <div class="testimonial-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
-                                                quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate
-                                                velit imperdiet dolor tempor tristique. Pellentesque habitant morbi
-                                                tristique senectus et netus et malesuada fames ac turpis egestas.
-                                                Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                            <p>&ldquo;“I designed it for make and delivery furniture at doorstep of people. and make easier access of furniture buy and sell and purchase in 1 step.ITs my hope that it will help people .”
+
+                                               
+                                                
+                                                &rdquo;</p>
                                         </blockquote>
 
                                         <div class="author-info">
                                             <div class="author-pic">
-                                                <img src="{{config('app.url')}}/Frontend/images/person-1.png"
+                                                <img src="{{config('app.url')}}/Frontend/images/sourav.jpg"
                                                     alt="Maria Jones" class="img-fluid">
                                             </div>
-                                            <h3 class="font-weight-bold">Maria Jones</h3>
-                                            <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                            <h3 class="font-weight-bold">Sourav Debnath</h3>
+                                            <span class="position d-block mb-3">CEO, Co-Founder, Furnixure Inc.</span>
                                         </div>
                                     </div>
 

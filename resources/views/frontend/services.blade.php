@@ -6,8 +6,9 @@
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
                         <h1>Services</h1>
-                        <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-                        <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+                        <p class="mb-4">Furtixure provides premium services such as fast shipping, expert assembly, personalized design consultations, and hassle-free returns for customer satisfaction.</p>
+                        <p><a href="{{url('/shop')}}" class="btn btn-secondary me-2">Shop Now</a>
+                            <a href="{{url('/about_us')}}" class="btn btn-white-outline">Explore</a></p>
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -67,7 +68,7 @@
                     <p>Enjoy hassle-free returns with our simple and convenient system. Your satisfaction is our priority. Return with confidence!.</p>
                 </div>
             </div>
-
+{{-- 
             <div class="col-6 col-md-6 col-lg-3 mb-4">
                 <div class="feature">
                     <div class="icon">
@@ -106,7 +107,7 @@
                     <h3>Hassle Free Returns</h3>
                     <p>Enjoy hassle-free returns with our simple and convenient system. Your satisfaction is our priority. Return with confidence!.</p>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     

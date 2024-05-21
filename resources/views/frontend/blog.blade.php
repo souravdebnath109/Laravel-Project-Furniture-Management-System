@@ -7,8 +7,8 @@
             <div class="col-lg-5">
                 <div class="intro-excerpt">
                     <h1>Blog</h1>
-                    <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-                    <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+                    <p class="mb-4">Dust regularly, clean with suitable products, address spills quickly, protect surfaces, and periodically consider professional cleaning for optimal maintenance.</p>
+                    <p><a href="{{url('/shop')}}" class="btn btn-secondary me-2">Shop Now</a><a href="{{url('/about_us')}}" class="btn btn-white-outline">Explore</a></p>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -36,7 +36,7 @@
                 <div class="post-content-entry">
                     <h3><a href="{{url('https://www.wikihow.com/Clean-Furniture')}}">Regular Cleaning</a></h3>
                     <div class="meta">
-                        <span>by <a href="{{url('https://www.wikihow.com/Clean-Furniture')}}">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+                        <span>by <a href="{{url('https://www.wikihow.com/Clean-Furniture')}}">Sourav Debnath</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                 <div class="post-content-entry">
                     <h3><a href="{{url('https://www.moving.com/tips/6-reasons-why-you-should-use-furniture-padding-when-you-move/')}}">Use Furniture Protectors</a></h3>
                     <div class="meta">
-                        <span>by <a href="{{url('https://www.moving.com/tips/6-reasons-why-you-should-use-furniture-padding-when-you-move/')}}">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+                        <span>by <a href="{{url('https://www.moving.com/tips/6-reasons-why-you-should-use-furniture-padding-when-you-move/')}}">Niloy Debnath</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <div class="post-content-entry">
                     <h3><a href="{{url('https://www.thompsoncreek.com/blog/can-sun-damage-furniture/')}}">Avoid Direct Sunlight:</a></h3>
                     <div class="meta">
-                        <span>by <a href="{{url('https://www.thompsoncreek.com/blog/can-sun-damage-furniture/')}}">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+                        <span>by <a href="{{url('https://www.thompsoncreek.com/blog/can-sun-damage-furniture/')}}">Susmita Debnath</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="post-content-entry">
                     <h3><a href="https://www.condair.com/humidifiers-for-furniture-flooring">Control Humidity: </a></h3>
                     <div class="meta">
-                        <span>by <a href="https://www.condair.com/humidifiers-for-furniture-flooring">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+                        <span>by <a href="https://www.condair.com/humidifiers-for-furniture-flooring">Gourab Debnath</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <div class="post-content-entry">
                     <h3><a href="https://www.gominis.com/blog/2023/june/the-dos-and-donts-of-moving-heavy-furniture/#:~:text=Using%20proper%20lifting%20techniques%20is,it%20can%20strain%20your%20back.">Proper Lifting and Moving</a></h3>
                     <div class="meta">
-                        <span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+                        <span>by <a href="#">Sourav Debnath</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                 <div class="post-content-entry">
                     <h3><a href="https://www.gominis.com/blog/2023/june/the-dos-and-donts-of-moving-heavy-furniture/#:~:text=Using%20proper%20lifting%20techniques%20is,it%20can%20strain%20your%20back.">Avoid Overloading</a></h3>
                     <div class="meta">
-                        <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+                        <span>by <a href="https://www.facebook.com/">Sourav Debnath</a></span> <span>on <a href="https://www.facebook.com/">Dec 12, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 <div class="post-content-entry">
                     <h3><a href="https://ebooks.inflibnet.ac.in/hsp02/chapter/care-and-maintenance-of-furniture/">Seasonal Care</a></h3>
                     <div class="meta">
-                        <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+                        <span>by <a href="https://www.facebook.com/">Sourav Debnath</a></span> <span>on <a href="https://www.facebook.com/">Dec 19, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                 <div class="post-content-entry">
                     <h3><a href="https://safetymanagementgroup.com/blog/spill-response-the-four-critical-steps/#:~:text=Clean%20the%20surfaces%20that%20were,such%20as%20more%20absorbent%20material.">Treat Spills Promptly</a></h3>
                     <div class="meta">
-                        <span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+                        <span>by <a href="https://www.facebook.com/">Sourav Debnath</a></span> <span>on <a href="https://www.facebook.com/">Dec 15, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                 <div class="post-content-entry">
                     <h3><a href="https://suzyssitcom.com/2016/09/10-great-ways-to-use-furniture-polish.html">Use Furniture Polish</a></h3>
                     <div class="meta">
-                        <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+                        <span>by <a href="https://www.facebook.com/">Sourav Debnath</a></span> <span>on <a href="https://www.facebook.com/">Dec 12, 2021</a></span>
                     </div>
                 </div>
             </div>
@@ -173,14 +173,36 @@
 
                                 <div class="testimonial-block text-center">
                                     <blockquote class="mb-5">
-                                        <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                        <p>&ldquo;“I designed it for make and delivery furniture at doorstep of people. and make easier access of furniture buy and sell and purchase in 1 step.ITs my hope that it will help people.”&rdquo;</p>
                                     </blockquote>
 
                                     <div class="author-info">
                                         <div class="author-pic">
-                                            <img src="{{config('app.url')}}/Frontend/images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                            <img src="{{config('app.url')}}/Frontend/images/sourav.jpg" alt="Sourav" class="img-fluid">
                                         </div>
-                                        <h3 class="font-weight-bold">Maria Jones</h3>
+                                        <h3 class="font-weight-bold">Sourav Debnath</h3>
+                                        <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- END item -->
+                    <div class="item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 mx-auto">
+
+                                <div class="testimonial-block text-center">
+                                    <blockquote class="mb-5">
+                                        <p>&ldquo;“I designed it for make and delivery furniture at doorstep of people. and make easier access of furniture buy and sell and purchase in 1 step.ITs my hope that it will help people.”&rdquo;</p>
+                                    </blockquote>
+
+                                    <div class="author-info">
+                                        <div class="author-pic">
+                                            <img src="{{config('app.url')}}/Frontend/images/sourav.jpg" alt="Sourav" class="img-fluid">
+                                        </div>
+                                        <h3 class="font-weight-bold">Sourav Debnath</h3>
                                         <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
                                     </div>
                                 </div>
@@ -196,37 +218,14 @@
 
                                 <div class="testimonial-block text-center">
                                     <blockquote class="mb-5">
-                                        <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                        <p>&ldquo;“I designed it for make and delivery furniture at doorstep of people. and make easier access of furniture buy and sell and purchase in 1 step.ITs my hope that it will help people.”&rdquo;</p>
                                     </blockquote>
 
                                     <div class="author-info">
                                         <div class="author-pic">
-                                            <img src="{{config('app.url')}}/Frontend/images/person-1.png" alt="Maria Jones" class="img-fluid">
+                                            <img src="{{config('app.url')}}/Frontend/images/sourav.jpg" alt="Sourav" class="img-fluid">
                                         </div>
-                                        <h3 class="font-weight-bold">Maria Jones</h3>
-                                        <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div> 
-                    <!-- END item -->
-
-                    <div class="item">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 mx-auto">
-
-                                <div class="testimonial-block text-center">
-                                    <blockquote class="mb-5">
-                                        <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-                                    </blockquote>
-
-                                    <div class="author-info">
-                                        <div class="author-pic">
-                                            <img src="{{config('app.url')}}/Frontend/images/person-1.png" alt="Maria Jones" class="img-fluid">
-                                        </div>
-                                        <h3 class="font-weight-bold">Maria Jones</h3>
+                                        <h3 class="font-weight-bold">Sourav Debnath</h3>
                                         <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
                                     </div>
                                 </div>

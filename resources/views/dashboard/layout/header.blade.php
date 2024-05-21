@@ -6,6 +6,7 @@
        @if(Auth::user() && Auth::user()->role==1)
        <p>Admin's Dashboard</p>
         @endif
+        
         @if(Auth::user() && Auth::user()->role==2)
         <p>User's Dashboard</p>
          @endif
@@ -106,7 +107,7 @@
                     </li> --}}
                     <li class="nav-item dropdown header-profile">
                         <a class="nav-link" href="#" role="button" data-toggle="dropdown">
-                            <i class="mdi mdi-account"></i>
+                            <i class="fa-solid fa-caret-down"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             {{-- <a href="./app-profile.html" class="dropdown-item">
@@ -118,7 +119,7 @@
                                 <span class="ml-2">Inbox </span>
                             </a> --}}
                             <a href="{{url('/logout')}}" class="dropdown-item">
-                                <i class="icon-key"></i>
+                            <i class="fa-solid fa-right-from-bracket"></i>
                                 <span class="ml-2">Logout </span>
                             </a>
 
