@@ -9,6 +9,7 @@
                     {{-- <li><a href="./index2.html">Dashboard</a></li> --}}
                 </ul>
             </li>
+            {{-- admin aita --}}
             @if(Auth::user() && Auth::user()->role==1)
             <li class="nav-label">Furniture</li>
             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
@@ -16,6 +17,32 @@
                 <ul aria-expanded="false">
                     <li><a href="{{url('/_admin/add_furniture')}}">Add Furniture</a></li>
                     <li><a href="{{url('/_admin/view_furniture')}}">View Furniture</a></li>
+                    {{-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
+                        <ul aria-expanded="false">
+                            <li><a href="./email-compose.html">Compose</a></li>
+                            <li><a href="./email-inbox.html">Inbox</a></li>
+                            <li><a href="./email-read.html">Read</a></li>
+                        </ul>
+                    </li> --}}
+
+                </ul>
+
+
+            </li>
+
+
+
+
+
+                        <li class="nav-label">Furniture</li>
+            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                        class="icon icon-app-store"></i><span class="nav-text">Furniture</span></a>
+                <ul aria-expanded="false">
+                    <li><a href="{{url('/_admin/add_furniture')}}">Add Furniture</a></li>
+                    <li><a href="{{url('/_admin/view_furniture')}}">View Furniture</a></li>
+
+
+                    
                     {{-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
                         <ul aria-expanded="false">
                             <li><a href="./email-compose.html">Compose</a></li>
@@ -57,8 +84,10 @@
             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                         class="icon icon-app-store"></i><span class="nav-text">Our team</span></a>
                 <ul aria-expanded="false">
-                    <li><a href="{{url('/_admin/add_blog')}}">Add Blog</a></li>
-                    <li><a href="{{url('/_admin/view_blogs')}}">View blog</a></li>
+                    <li><a href="{{url('/_admin/add_blog')}}">Add Member</a></li>
+                    <li><a href="{{url('/_admin/view_blogs')}}">View Member</a></li>
+                    <li><a href="{{url('/_admin/add_blog_forblogpage')}}">Add Blog</a></li>
+                    <li><a href="{{url('/_admin/view_blogs_forblogpage')}}">View Blog</a></li>
                     {{-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
                         <ul aria-expanded="false">
                             <li><a href="./email-compose.html">Compose</a></li>

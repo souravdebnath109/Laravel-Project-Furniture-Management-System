@@ -61,6 +61,21 @@ Route::group(['prefix'=>'_admin','middleware'=>['web','isAdmin']],function(){
     Route::post('/edit_blog/{id}', [AdminController::class, 'post_edit_blog']);
     Route::get('/delete_blog/{id}', [AdminController::class, 'delete_blog']);
 
+
+
+
+    //aituku amar kora for blog  er crud in blog page 
+
+
+
+
+    Route::get('/add_blog_forblogpage', [AdminController::class, 'create_forblogpage']);//done
+    Route::post('/add_blog_forblogpage', [AdminController::class, 'post_add_blog_forblogpage']);//done
+    Route::get('/view_blogs_forblogpage', [AdminController::class, 'view_blog_forblogpage']);//done
+    Route::get('/edit_blog_forblogpage/{id}', [AdminController::class, 'edit_blog_forblogpag']);//done
+    Route::post('/edit_blog_forblogpage/{id}', [AdminController::class, 'post_edit_blog_forblogpage']);//done
+    Route::get('/delete_blog_forblogpage/{id}', [AdminController::class, 'delete_blog_forblogpage']);//done
+
     
 });
 

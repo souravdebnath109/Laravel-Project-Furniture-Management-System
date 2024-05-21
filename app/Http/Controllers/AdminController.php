@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Furniture;
 use App\Models\About;
-
+use App\Models\furniblog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -99,7 +99,7 @@ class AdminController extends Controller
 
 
 
-    //================amar  kora for blog
+    //================amar  kora for blog gor about_us page
 
     // public function dashboard(){
     //     return view('dashboard.admin.admin_dashboard');
@@ -135,8 +135,8 @@ class AdminController extends Controller
             $image->move('Blogs', $imageName);
         }
 
-         $blog=new About();
-  
+        $blog = new About();
+
         $blog->title = $request->input('title');
         $blog->photo_path = $imageName;
         $blog->description = $request->input('description');
@@ -189,17 +189,134 @@ class AdminController extends Controller
 
 
     public function delete_blog($id)
-{
-    $blog = About::find($id);
-    $deleteOldImage = public_path('Blogs/' . $blog->photo_path);
+    {
+        $blog = About::find($id);
+        $deleteOldImage = public_path('Blogs/' . $blog->photo_path);
 
-    if (file_exists($deleteOldImage)) {
-        unlink($deleteOldImage);
+        if (file_exists($deleteOldImage)) {
+            unlink($deleteOldImage);
+        }
+
+        $blog->delete();
+
+        return redirect('/_admin/view_blogs')->with('error', 'Blog deleted successfully');
     }
 
-    $blog->delete();
 
-    return redirect('/_admin/view_blogs')->with('error', 'Blog deleted successfully');
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //======================================================= for blog in blog page 
+
+
+
+    public function create_forblogpage()
+    {
+        return view('dashboard.admin.blog.createblog');
+    }
+
+    public function view_blog_forblogpage()
+    {
+        $dataa['getbloggs'] = furniblog::all();
+        return view('dashboard.admin.blog.view_blog_blog', $dataa);
+    }
+
+
+
+    public function post_add_blog_forblogpage(Request $request)
+    {
+        $request->validate([
+            'title' => 'required',
+            'photo_path' => 'required|mimes:png,jpg,jpeg,bmp',
+            // 'description' => 'required',
+            'website_link' => 'required|url|max:255'
+        ]);
+
+        $imageName = '';
+        if ($image = $request->file('photo_path')) {
+            $imageName = time() . '-' . uniqid() . '.' . $image->getClientOriginalExtension();
+            // Move the image to the public folder
+            $image->move('Blogs', $imageName);
+        }
+
+        $blog = new furniblog();
+
+        $blog->title = $request->input('title');
+        $blog->photo_path = $imageName;
+        // $blog->description = $request->input('description');
+        $blog->website_link = $request->input('website_link');
+        $blog->save();
+
+        return redirect('/_admin/add_blog_forblogpage')->with('success', 'Blog added successfully');
+    }
+
+
+    public function edit_blog_forblogpage($id)
+    {
+        $dataa['getbloggs'] = furniblog::find($id);
+        return view('dashboard.admin.blog.edit_blog_blog', $dataa);
+    }
+
+
+    public function post_edit_blog_forblogpage($id, Request $request)
+    {
+        $blog = furniblog::find($id);
+
+        $request->validate([
+            'title' => 'required',
+            // 'description' => 'required',
+            'website_link' => 'required|url|max:255',
+            'photo_path' => 'nullable|mimes:png,jpg,jpeg,bmp'
+        ]);
+
+        $imageName = $blog->photo_path;
+
+        if ($image = $request->file('photo_path')) {
+            // Delete old image if exists
+            if (file_exists(public_path('Blogs/' . $blog->photo_path))) {
+                unlink(public_path('Blogs/' . $blog->photo_path));
+            }
+            $imageName = time() . '-' . uniqid() . '.' . $image->getClientOriginalExtension();
+            // Store new image
+            $image->move('Blogs', $imageName);
+        }
+
+        $blog->title = $request->input('title');
+        // $blog->description = $request->input('description');
+        $blog->website_link = $request->input('website_link');
+        $blog->photo_path = $imageName;
+        $blog->save();
+
+        return redirect('/_admin/view_blogs_forblogpage')->with('success', 'Blog updated successfully');
+    }
+
+
+
+    public function delete_blog_forblogpage($id)
+    {
+        $blog = furniblog::find($id);
+        $deleteOldImage = public_path('Blogs/' . $blog->photo_path);
+
+        if (file_exists($deleteOldImage)) {
+            unlink($deleteOldImage);
+        }
+
+        $blog->delete();
+
+        return redirect('/_admin/view_blogs_forblogpage')->with('error', 'Blog deleted successfully');
+    }
 }

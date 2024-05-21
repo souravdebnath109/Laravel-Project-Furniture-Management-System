@@ -9,7 +9,7 @@ use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 
 use App\Mail\contactemail;
-
+use App\Models\furniblog;
 
 class FrontendController extends Controller
 {
@@ -43,7 +43,9 @@ class FrontendController extends Controller
     }
     public function blog()
     {
-        return view("frontend.blog");
+        $data['getbloggs'] = furniblog::all();
+
+        return view("frontend.blog",$data);
     }
     // video te  aikhane index method use korse
     public function show()

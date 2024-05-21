@@ -28,119 +28,18 @@
 <div class="container">
     
     <div class="row">
+        @foreach($getbloggs as $about)
+        <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+            <img src="{{ asset('Blogs/' . $about->photo_path) }}" class="img-fluid mb-5">
+            <h3>{{ $about->title }}</h3>
+            {{-- <span class="d-block position mb-4">{{ $about->description }}</span> --}}
+            {{-- <p>{{ $about->website_link }}</p> --}}
+            <p class="mb-0"><a href="{{ $about->website_link }}" class="more dark">Learn More <span class="icon-arrow_forward"></span></a></p>
 
-        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-1.jpg"
-                        alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="{{url('https://www.wikihow.com/Clean-Furniture')}}">Regular Cleaning</a></h3>
-                    <div class="meta">
-                        <span>by <a href="{{url('https://www.wikihow.com/Clean-Furniture')}}">Sourav Debnath</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
-                    </div>
-                </div>
-            </div>
         </div>
+        @endforeach
 
-        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-2.jpg"
-                        alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="{{url('https://www.moving.com/tips/6-reasons-why-you-should-use-furniture-padding-when-you-move/')}}">Use Furniture Protectors</a></h3>
-                    <div class="meta">
-                        <span>by <a href="{{url('https://www.moving.com/tips/6-reasons-why-you-should-use-furniture-padding-when-you-move/')}}">Niloy Debnath</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-3.jpg"
-                        alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="{{url('https://www.thompsoncreek.com/blog/can-sun-damage-furniture/')}}">Avoid Direct Sunlight:</a></h3>
-                    <div class="meta">
-                        <span>by <a href="{{url('https://www.thompsoncreek.com/blog/can-sun-damage-furniture/')}}">Susmita Debnath</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-1.jpg" alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="https://www.condair.com/humidifiers-for-furniture-flooring">Control Humidity: </a></h3>
-                    <div class="meta">
-                        <span>by <a href="https://www.condair.com/humidifiers-for-furniture-flooring">Gourab Debnath</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-2.jpg" alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="https://www.gominis.com/blog/2023/june/the-dos-and-donts-of-moving-heavy-furniture/#:~:text=Using%20proper%20lifting%20techniques%20is,it%20can%20strain%20your%20back.">Proper Lifting and Moving</a></h3>
-                    <div class="meta">
-                        <span>by <a href="#">Sourav Debnath</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-3.jpg" alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="https://www.gominis.com/blog/2023/june/the-dos-and-donts-of-moving-heavy-furniture/#:~:text=Using%20proper%20lifting%20techniques%20is,it%20can%20strain%20your%20back.">Avoid Overloading</a></h3>
-                    <div class="meta">
-                        <span>by <a href="https://www.facebook.com/">Sourav Debnath</a></span> <span>on <a href="https://www.facebook.com/">Dec 12, 2021</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-1.jpg" alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="https://ebooks.inflibnet.ac.in/hsp02/chapter/care-and-maintenance-of-furniture/">Seasonal Care</a></h3>
-                    <div class="meta">
-                        <span>by <a href="https://www.facebook.com/">Sourav Debnath</a></span> <span>on <a href="https://www.facebook.com/">Dec 19, 2021</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-2.jpg" alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="https://safetymanagementgroup.com/blog/spill-response-the-four-critical-steps/#:~:text=Clean%20the%20surfaces%20that%20were,such%20as%20more%20absorbent%20material.">Treat Spills Promptly</a></h3>
-                    <div class="meta">
-                        <span>by <a href="https://www.facebook.com/">Sourav Debnath</a></span> <span>on <a href="https://www.facebook.com/">Dec 15, 2021</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-                <a href="#" class="post-thumbnail"><img src="{{config('app.url')}}/Frontend/images/post-3.jpg" alt="Image" class="img-fluid"></a>
-                <div class="post-content-entry">
-                    <h3><a href="https://suzyssitcom.com/2016/09/10-great-ways-to-use-furniture-polish.html">Use Furniture Polish</a></h3>
-                    <div class="meta">
-                        <span>by <a href="https://www.facebook.com/">Sourav Debnath</a></span> <span>on <a href="https://www.facebook.com/">Dec 12, 2021</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+</div>
 </div>
 </div>
 <!-- End Blog Section -->	
