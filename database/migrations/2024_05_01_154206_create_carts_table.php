@@ -17,7 +17,9 @@ return new class extends Migration
             $table->unsignedBigInteger('furniture_id');
             $table->double('total');
             $table->unsignedBigInteger('quantity');
+            // aita 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            //aita  
             $table->foreign('furniture_id')->references('id')->on('furnitures')->onDelete('cascade');
             $table->timestamps();
         });

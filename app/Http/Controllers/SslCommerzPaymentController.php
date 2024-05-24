@@ -204,7 +204,9 @@ class SslCommerzPaymentController extends Controller
                     ->where('transaction_id', $tran_id)
                     ->update(['status' => 'Processing']);
 
-                echo "<br >Transaction is successfully Completed";
+               //  echo "<br >Transaction is successfully Completed";
+                return redirect ('/thankyou')->with('success','Transaction is completed');
+            
             }
         } else if ($order_details->status == 'Processing' || $order_details->status == 'Complete') {
             /*

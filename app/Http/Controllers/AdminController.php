@@ -11,6 +11,14 @@ use Illuminate\Support\Facades\File;
 class AdminController extends Controller
 {
     //
+
+
+    public function ind(){
+        return view('frontend.sourav');
+    }
+
+
+
     public function dashboard()
     {
         return view('dashboard.admin.admin_dashboard');
