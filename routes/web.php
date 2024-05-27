@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
@@ -109,4 +109,8 @@ Route::post('/fail', [SslCommerzPaymentController::class, 'fail']);
 Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
 
 Route::post('/ipn', [SslCommerzPaymentController::class, 'ipn']);
-//SSLCOMMERZ END
+//SSLCOMMERZ END -->
+
+
+
+
