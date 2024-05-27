@@ -28,9 +28,7 @@
                                                     <label class="form-check-label" for="basic_checkbox_1">Remember me</label>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <a href="page-forgot-password.html">Forgot Password?</a>
-                                            </div>
+                                         
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" class="btn btn-primary btn-block">Sign me in</button>

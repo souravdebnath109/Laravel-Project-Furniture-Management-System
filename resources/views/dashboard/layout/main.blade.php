@@ -8,7 +8,7 @@
     <title>Focus - Bootstrap Admin Dashboard </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Favicon icon -->
     {{-- <ul class="navbar-nav align-items-center right-nav-link">
         <li class="nav-item dropdown-lg">
@@ -69,7 +69,7 @@
         ***********************************-->
         <div class="content-body">
             <!-- row -->
-            @yield('content')
+            {{-- @yield('content') --}}
         </div>
         <!--**********************************
             Content body end
@@ -102,35 +102,16 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
+    
     <script src="{{config('app.url')}}/Admin/vendor/global/global.min.js"></script>
-    <script src="{{config('app.url')}}/Admin/js/quixnav-init.js"></script>
+ 
     <script src="{{config('app.url')}}/Admin/js/custom.min.js"></script>
 
 
-    <!-- Vectormap -->
-    <script src="{{config('app.url')}}/Admin/vendor/raphael/raphael.min.js"></script>
-    <script src="{{config('app.url')}}/Admin/vendor/morris/morris.min.js"></script>
 
 
-    <script src="{{config('app.url')}}/Admin/vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="{{config('app.url')}}/Admin/vendor/chart.js/Chart.bundle.min.js"></script>
-
-    <script src="{{config('app.url')}}/Admin/vendor/gaugeJS/dist/gauge.min.js"></script>
-
-    <!--  flot-chart js -->
-    <script src="{{config('app.url')}}/Admin/vendor/flot/jquery.flot.js"></script>
-    <script src="{{config('app.url')}}/Admin/vendor/flot/jquery.flot.resize.js"></script>
-
-    <!-- Owl Carousel -->
-    <script src="{{config('app.url')}}/Admin/vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-    <!-- Counter Up -->
-    <script src="{{config('app.url')}}/Admin/vendor/jqvmap/js/jquery.vmap.min.js"></script>
-    <script src="{{config('app.url')}}/Admin/vendor/jqvmap/js/jquery.vmap.usa.js"></script>
-    <script src="{{config('app.url')}}/Admin/vendor/jquery.counterup/jquery.counterup.min.js"></script>
 
 
-    <script src="{{config('app.url')}}/Admin/js/dashboard/dashboard-1.js"></script>
 
 </body>
 

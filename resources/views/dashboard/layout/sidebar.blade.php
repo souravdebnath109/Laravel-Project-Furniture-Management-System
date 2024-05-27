@@ -32,29 +32,11 @@
 
 
 
+            {{-- now added --}}
 
+            
+     
 
-                        <li class="nav-label">Furniture</li>
-            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                        class="icon icon-app-store"></i><span class="nav-text">Furniture</span></a>
-                <ul aria-expanded="false">
-                    <li><a href="{{url('/_admin/add_furniture')}}">Add Furniture</a></li>
-                    <li><a href="{{url('/_admin/view_furniture')}}">View Furniture</a></li>
-
-
-                    
-                    {{-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./email-compose.html">Compose</a></li>
-                            <li><a href="./email-inbox.html">Inbox</a></li>
-                            <li><a href="./email-read.html">Read</a></li>
-                        </ul>
-                    </li> --}}
-
-                </ul>
-
-
-            </li>
             @endif
             {{-- aita amar use er jonno --}}
 
@@ -77,6 +59,19 @@
 
 
             </li>
+
+
+
+
+            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                class="icon icon-app-store"></i><span class="nav-text">Chat</span></a>
+        <ul aria-expanded="false">
+            <li><a href="{{url('/chatify')}}">Chat</a></li>
+
+        </ul>
+
+
+    </li>
             @endif
 
             {{-- <li class="nav-label"> Team</li> --}}
@@ -88,6 +83,8 @@
                     <li><a href="{{url('/_admin/view_blogs')}}">View Member</a></li>
                     <li><a href="{{url('/_admin/add_blog_forblogpage')}}">Add Blog</a></li>
                     <li><a href="{{url('/_admin/view_blogs_forblogpage')}}">View Blog</a></li>
+                  
+
                     {{-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
                         <ul aria-expanded="false">
                             <li><a href="./email-compose.html">Compose</a></li>
@@ -100,6 +97,16 @@
 
 
             </li>
+
+            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                class="icon icon-app-store"></i><span class="nav-text">Chat</span></a>
+        <ul aria-expanded="false">
+            <li><a href="{{url('/chatify')}}">Chat</a></li>
+
+        </ul>
+
+
+    </li>
             @endif
             {{--
             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
