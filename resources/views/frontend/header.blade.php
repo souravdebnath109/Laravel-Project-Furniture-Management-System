@@ -44,7 +44,7 @@
 							<a class="nav-link" href="{{url('/index')}}">Home</a>
 						</li>
 						<li class="@if(Request::segment(1)=='shop') active @endif"><a class="nav-link"  href="{{url('/shop')}}">Shop</a></li>
-						<li class="@if(Request::segment(1)=='shop') active @endif"><a class="nav-link"  href="{{url('/chatify')}}">Chat</a></li>
+						<li class="@if(Request::segment(1)=='chat') active @endif"><a class="nav-link"  href="{{url('/chatify')}}">Chat</a></li>
 
 						<li class="@if(Request::segment(1)=='about_us') active @endif"><a class="nav-link" href="{{url('/about_us')}}">About us</a></li>
 						<li class="@if(Request::segment(1)=='services') active @endif"><a class="nav-link" href="{{url('/services')}}">Services</a></li>
