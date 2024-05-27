@@ -1,4 +1,4 @@
-@extends('dashboard.layout.main')
+@extends('dashboard.layout.mainn')
 @section('content')
 <div class="card">
     <div class="card-header">

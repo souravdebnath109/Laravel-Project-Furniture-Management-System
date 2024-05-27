@@ -6,7 +6,7 @@
 
 @endsection --}}
 
-@extends('dashboard.layout.main')
+@extends('dashboard.layout.mainn')
 @section('content')
 @if(Auth::user() && Auth::user()->role==2)
 <div style="position: relative; text-align: center;">

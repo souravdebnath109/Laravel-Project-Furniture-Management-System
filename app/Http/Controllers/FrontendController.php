@@ -62,7 +62,9 @@ class FrontendController extends Controller
         ];
         Mail::to('deb513715@gmail.com')->send(new  contactemail($maildata));
         //  return back()->with('message_sent','Your Message Has Been Sent Successfully');
-        dd('Email send  successfully');
+     //   dd('Email send  successfully');
+     return redirect ('/contact_us')->with('success','Email Send');
+
     }
     public function cart()
     {
